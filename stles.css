@@ -1,0 +1,483 @@
+
+
+
+.nav-wrapper{
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  border-bottom: 1px solid;
+  padding: 1rem;
+  box-shadow: .2rem 0 .2rem .2rem;
+  /* position: fixed; */
+  
+}
+
+
+
+
+.searchSection{
+  text-align: center;
+  
+}
+.searchSection input{
+  width: 80%;
+  height:25px;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid;
+  font-size: 1.8rem;
+  color: var(--black-1);
+  font-weight: 700;
+
+}
+.searchSection svg{
+  display: none;
+}
+/* balck mode color serach bar action take place in js section see their */
+.searchSection input.searchboxColor{
+  background: orangered;
+}
+.searchSection input::placeholder{
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: var(--white-1);
+  font-weight: 700;
+}
+.logo a{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: tomato;
+  
+
+}
+.logo span{
+  color: rgb(7, 74, 28);
+}
+.cartSection{
+  text-align: center;
+  width: 50px;
+  border: transparent;
+  border-radius: 12px;
+  z-index: 1000;
+  
+}
+/* .cartSection img{
+  background-color: rgb(144, 124, 124);
+ padding: 1rem;
+ width:50px ;
+ border-radius: 12px;
+} */
+/* nav bar black */
+.right-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-wrapper.navdark{
+  background: rgb(27, 27, 27);
+}
+
+/* box styling */
+.box-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+ 
+
+
+}
+.box{
+  border: 1px solid;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ gap: 2rem;
+  margin: 0 auto;
+  text-align: center;
+background-color: white;
+  box-shadow: 5px 5px;
+  transition: all .15s linear;
+  border-radius: 12px;
+  
+
+ 
+}
+.box:hover{
+  box-shadow: 0 0;
+}
+
+
+.img-section-2,
+.img-section-2 img,
+.img-section ,
+.img-section img{
+  width: 250px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.info h3{
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 900;
+
+}
+.info h5{
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.info .btn{
+  margin-top: 1rem;
+ border: 2px solid;
+ font-size: 2rem;
+ padding: .5rem;
+ border-radius: 8px;
+color: bisque;
+background-color: black;
+
+  
+}
+select{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
+
+.cart h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.cartItem{
+  border: 2px solid;
+  width: 300px;
+  margin: 0 auto;
+  
+}
+
+.addtocart-imgSection{
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  
+
+}
+.addtocart-product-name{
+  text-align: center;
+  font-size: 2rem;
+
+}
+.addtocart-product-price{
+  font-size: 2rem;
+  text-align: center;
+}
+.cartImg{
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+}
+ul li{
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-bottom: 4px solid;
+  padding: 1rem;
+
+}
+.addtocart{
+
+  position: absolute;
+ top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background: #fff;
+  display:none;
+  height: 100%;
+  z-index: 1000000;
+ 
+
+}
+.addtocart.show{
+ display: block;
+}
+.addtocart.hide{
+  display: none;
+}
+.cart-item {
+  border: 2px solid rgb(192, 189, 189);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 50%;
+  margin: 1.5rem auto;
+  margin-top: 8rem;
+  border-radius: 10px;
+  box-shadow: .2rem .5rem 1rem ;
+  
+
+
+  
+}
+.close-btn{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  padding:0rem .5rem ;
+  font-weight:700 ;
+  background: transparent;
+  border: transparent;
+  transition: all .15s linear;
+
+}
+.close-btn:hover{
+  background: black;
+  color: #fff;
+  font-size: 3.9rem;
+  border-radius: 8px;
+}
+
+.delete{
+ margin: 0 auto;
+ text-transform: capitalize;
+  font-size: 2.9rem;
+  font-weight: 700;
+  background:rgb(255, 45, 45);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: .2rem .5rem 1rem ;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom:1px solid rgb(168, 164, 164) ;
+}
+.delete:hover{
+  color: black;
+  background: white;
+}
+.cart-downsection{
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid;
+  box-shadow: .2rem .5rem 1rem ;
+  height: 80px;
+  background-color: #fff;
+}
+.totalprice{
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: end;
+  
+}
+.addAddress,
+.placeOrder{
+  background: black;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  transition: all .15s linear;
+  box-shadow: .2rem .2rem .2rem .2rem;
+
+}
+.addAddress:hover,
+.placeOrder:hover{
+  background: #fff;
+  color: black;
+}
+
+
+/* size and color section styles */
+.hiddenSection,.hiddenSection-2{
+  display: none;
+}
+.hiddenSection-2.live,
+.hiddenSection.live{
+  display: block;
+}
+
+/* .img-btn-2,
+.img-btn-1{
+  
+} */
+.img-section button,
+.img-section-2 button{
+  margin-top: 1rem;
+}
+.img-section button:focus,
+.img-section-2 button:focus{
+  background: black;
+  color: #fff;
+}
+
+/* address checkout form */
+
+.addressForm{
+ border: 1px solid;
+border-radius: 12px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--white-1);
+display: none;
+z-index: 100000;
+
+
+
+}
+/* adress section show js action */
+.addressForm.showAddress{
+  display: block;
+}
+.adressWrapper{
+  position: relative;
+}
+
+
+.address-row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.col-100{
+  flex-basis: 80%;
+  padding:  0 1rem;
+}
+.col-50{
+  flex-basis: 50%;
+  padding:  0  1rem;
+}
+.icon-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.icon-container i {
+  display: inline-block;
+  padding-bottom:5px ;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+label {
+ margin-bottom: 8px;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px;
+}
+.checkout-btn{
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: green;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media(max-width:800px){
+  .address-row{
+    flex-direction: column-reverse;
+  }
+ 
+}
+@media(max-width:605px){
+  .searchSection input{
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    
+  }
+  .searchSection input.searchboxShow{
+   display: block;
+  }
+  .searchSection svg{
+    display: block;
+    margin: 0 auto;
+    
+    text-align: end;
+  }
+  /* js action in dark mode */
+  .searchSection svg.searchSvgColorChange{
+    stroke:white;
+    
+  }
+
+  /* main image section magin top other wise when
+   we click searsh box it dispaly inside the img section
+    we cannot see so than when we click search
+   svg main img will move down by adding margin top */
+   .imgSection.img-marginTop{
+    margin-top: 8rem;
+   }
+
+   .addAddress,
+   .placeOrder{
+    font-size: 1rem;
+    width: 100px;
+    height: 60px;
+  
+   }
+}
+
+@media(max-width:447px){
+  .cart-downsection{
+    align-items: center;
+   
+  }
+  .totalprice{
+    font-size: 1rem;
+    
+  }
+  .addAddress,
+  .placeOrder{
+   font-size: .7rem;
+   width: 90px;
+   height: 40px;
+   padding: 0;
+ 
+  }
+ 
+}
