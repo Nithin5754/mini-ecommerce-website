@@ -235,7 +235,7 @@ ul li{
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  width: 50%;
+  /* width: 50%; */
   margin: 1.5rem auto;
   margin-top: 8rem;
   border-radius: 10px;
