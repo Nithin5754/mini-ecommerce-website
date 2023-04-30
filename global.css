@@ -19,12 +19,16 @@ body {
   font-family: "Montserrat", sans-serif;
     background-color: #f5f7fa;
     position: relative;
+    color: #000000;
 }
 /* toggle */
 body.dark-theme {
   background-color: #333;
+  color: white;
 }
-
+h1{
+  color: rgb(37, 18, 18);
+}
 
 section{
   padding: 100px 0;

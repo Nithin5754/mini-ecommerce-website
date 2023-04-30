@@ -14,13 +14,23 @@ top: 0;
   border-bottom: 1px solid;
   padding: 1rem;
   box-shadow: .2rem 0 .2rem .2rem;
+  z-index: 10;
   /* position: fixed; */
   
 }
+/* best selling product section styles here */
+.bestSelling-section{
+  padding-top: 0;
+  z-index: 1;
+}
+.heading{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
 
 
-
-
+/* best selling product section styles ends here */
 .searchSection{
   text-align: center;
   
@@ -110,6 +120,7 @@ background-color: white;
   box-shadow: 5px 5px;
   transition: all .15s linear;
   border-radius: 12px;
+  color: rgb(87, 30, 30);
   
 
  
@@ -229,6 +240,7 @@ ul li{
   margin-top: 8rem;
   border-radius: 10px;
   box-shadow: .2rem .5rem 1rem ;
+  color: rgb(50, 19, 19);
   
 
 
@@ -289,6 +301,7 @@ ul li{
   text-transform: uppercase;
   font-weight: 700;
   text-align: end;
+  color: rgb(40, 16, 16);
   
 }
 .addAddress,
@@ -416,10 +429,15 @@ h3{
   font-size: 1.5rem;
 }
 
+
+
+
+
 @media(max-width:800px){
   .address-row{
     flex-direction: column-reverse;
   }
+ 
  
 }
 @media(max-width:605px){
@@ -460,6 +478,8 @@ h3{
     height: 60px;
   
    }
+   
+
 }
 
 @media(max-width:447px){
@@ -479,5 +499,10 @@ h3{
    padding: 0;
  
   }
+  /* bestselling styles section */
+  .heading{
+    font-size: 1.8rem;
+  }
+
  
 }

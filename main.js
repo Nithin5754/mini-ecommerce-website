@@ -315,3 +315,29 @@ var swiper = new Swiper(".image-section", {
     el: ".swiper-pagination",
   },
 });
+
+// swiper js best selling section action here
+
+var swiper = new Swiper(".bestSelling-slider", {
+  loop:true,
+  spaceBetween: 20,
+  autoplay:{
+    delay:7500,
+    disableOnInteraction:false,
+  },
+  centeredSliders:true,
+  breakpoints: {
+  0: {
+      slidesPerView: 1,
+      
+    },
+    768: {
+      slidesPerView: 2,
+   
+    },
+    1020: {
+      slidesPerView: 3,
+      
+    },
+  },
+})
