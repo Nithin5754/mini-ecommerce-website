@@ -321,10 +321,7 @@ var swiper = new Swiper(".image-section", {
 var swiper = new Swiper(".bestSelling-slider", {
   loop:true,
   spaceBetween: 20,
-  autoplay:{
-    delay:7500,
-    disableOnInteraction:false,
-  },
+
   centeredSliders:true,
   breakpoints: {
   0: {
